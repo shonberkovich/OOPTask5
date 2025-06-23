@@ -17,24 +17,24 @@ public static void main(String[] args) {
         return;
     }
 
-    Person john = new Person("John", 25);
-    Person alice = new Person("Alice", 5);
-    Person baby = new Person("Tiny", 2);
-    Person older = new Person("Sarah", 72);
+    Person shai = new Person("shai", 25);
+    Person shon = new Person("shon", 5);
+    Person yura = new Person("yura", 2);
+    Person yakov = new Person("yakov", 72);
 
-    kSession.insert(john);
-    kSession.insert(alice);
-    kSession.insert(baby);
-    kSession.insert(older);
+    kSession.insert(shai);
+    kSession.insert(shon);
+    kSession.insert(yura);
+    kSession.insert(yakov);
 
     System.out.println(" Starting Drools rule engine...");
     kSession.fireAllRules();
     kSession.dispose();
 
-    printPersonStatus(john);
-    printPersonStatus(alice);
-    printPersonStatus(baby);
-    printPersonStatus(older);
+    printPersonStatus(shai);
+    printPersonStatus(shon);
+    printPersonStatus(yura);
+    printPersonStatus(yakov);
 }
 
     private static void printPersonStatus(Person p) {
