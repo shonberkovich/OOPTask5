@@ -17,10 +17,10 @@ public static void main(String[] args) {
         return;
     }
 
-    Person shai = new Person("shai", 25);
-    Person shon = new Person("shon", 5);
-    Person yura = new Person("yura", 2);
-    Person yakov = new Person("yakov", 72);
+    Person shai = new Person("shai", 27);
+    Person shon = new Person("shon", 19);
+    Person yura = new Person("yura", 6);
+    Person yakov = new Person("yakov", 2);
 
     kSession.insert(shai);
     kSession.insert(shon);
